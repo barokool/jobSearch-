@@ -24,9 +24,9 @@ const JobBoard = props => {
     return (
         <div className="mx-20">
             {jobs.filter((job) => {
-                if (search == "") {
+                if (search === "") {
                     return job;
-                } else if (job.company.toLowerCase().includes(search.toLowerCase()))
+                } else if (job.position.toLowerCase().includes(search.toLowerCase()))
                     return job;
             }).map(job => (
                 <div key={job.id} className="lg:flex shadow-md sm:max-w-full max-w-xl  bg-white  p-6 my-6 rounded-xl mx-4">

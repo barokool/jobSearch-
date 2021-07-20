@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <nav className="flex flex-col my-20  items-center">
-        <h1 className="text-center text-4xl font-bold">Search job</h1>
+        <h1 className="text-center text-4xl font-bold">Search job related to position</h1>
         <form className="my-4">
           <input type="text" className="p-2 shadow-md rounded-xl" placeholder="search.." onChange={event => {
             setSearch(event.target.value)
