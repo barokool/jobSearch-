@@ -29,12 +29,12 @@ const JobBoard = props => {
                 } else if (job.position.toLowerCase().includes(search.toLowerCase()))
                     return job;
             }).map(job => (
-                <div key={job.id} className="lg:flex shadow-md sm:max-w-full max-w-xl  bg-white  p-6 my-6 rounded-xl mx-4">
-                    <div className="sm:w-32 ">
+                <div key={job.id} className="lg:flex shadow-md  sm:max-w-full max-w-xl mb-12  bg-white  p-6 my-6 rounded-xl mx-4">
+                    <div className="sm:w-32 md:mt-0 -mt-12  ">
                         <img src={job.logo} alt={job.company} />
                     </div>
 
-                    <div className="ml-4 flex flex-col justify-between">
+                    <div className="sm:ml-2  ml-2 flex flex-col justify-between">
                         <h2 className="colorText1 font-bold">
                             {job.company}
                         </h2>
@@ -47,7 +47,7 @@ const JobBoard = props => {
 
                     </div>
 
-                    <div className=" ml-auto flex items-center">
+                    <div className=" ml-auto flex flex-wrap items-center">
                         {job.languages.map(language => (
                             <label className="colorText1 font-bold bg-custom rounded m-2 p-1">
                                 {language}
